@@ -63,7 +63,7 @@ namespace Strata.Exchange.Api
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                 .AddIdentityServerAuthentication(options =>
                 {
-                    options.Authority = "https://localhost:8471";//("A0A:Platform:WebService:Authentication:AuthorityV2"); //"https://iam.azuronaut.ai/"; // "https://a0a-identity-iam.eu.ngrok.io/";
+                    options.Authority = "https://localhost:8471";
                     options.SaveToken = true;
                     options.ApiName = "api";
                 });
